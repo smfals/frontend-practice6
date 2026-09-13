@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>校园生活数据看板</title>
+  <style>
+    .box{margin:20px;}
+    .tip{font-size:18px;color:#666;padding:10px;}
+    #eChartBox{width:650px;height:350px;border:1px solid #aaa;}
+    #chartjsBox{width:650px;height:350px;}
+    button{padding:8px 16px;font-size:16px;cursor:pointer;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>🏫 校园生活数据看板</h1>
+    <div id="statusTip" class="tip"></div>
+
+    <h3>图1：各地点人流量（单位：人次）｜数据来源：模拟校园统计</h3>
+    <div id="eChartBox"></div>
+
+    <h3>图2：满意度占比（单位：星）｜数据来源：模拟校园统计</h3>
+    <canvas id="chartjsBox"></canvas>
+
+    <br>
+    <button id="filterBtn">🔍 筛选：只显示人流量>100 的地点</button>
+  </div>
+
+  <!-- CDN加载顺序固定！jQuery → ECharts → Chart.js → 自己的app.js放最后 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

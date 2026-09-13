@@ -1,0 +1,10 @@
+[
+  {"place":"食堂一","people":120,"score":4.2},
+  {"place":"食堂二","people":95,"score":3.8},
+  {"place":"图书馆","people":80,"score":4.7},
+  {"place":"操场","people":65,"score":4.5},
+  {"place":"教学楼A","people":150,"score":4.0},
+  {"place":"教学楼B","people":110,"score":3.9},
+  {"place":"校园超市","people":130,"score":3.5},
+  {"place":"快递站","people":180,"score":3.2}
+]
